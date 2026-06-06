@@ -7,13 +7,13 @@ function check() {
   let y = inputNumber;
 
   if (y > 99999999) {
-    alert(
-      "Es sind keine Zahlen über 99'999'999 erlaubt, da die Berechnung lange dauern würde",
-    );
     document.getElementById("output1").textContent = "";
     document.getElementById("output2").textContent = "";
     document.getElementById("input").value = "";
     document.getElementById("input").focus();
+    alert(
+      "Es sind keine Zahlen über 99'999'999 erlaubt, da die Berechnung lange dauern würde",
+    );
   }
 
   while (x <= y - 1) {
