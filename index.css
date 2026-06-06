@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "ZenDots";
+  src: url(ZenDots-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+#text {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: ZenDots;
+}
+
+#input {
+  font-size: 1.5rem;
+  max-width: 60vw;
+  text-align: end;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.output {
+  text-align: center;
+  font-size: 2rem;
+  font-family: ZenDots;
+}
+
+#output1 {
+  color: red;
+}
+
+#output2 {
+  color: rgb(36, 238, 36);
+}
+
+@media only screen and (min-width: 600px) {
+  .btn {
+    padding: 1rem 2rem;
+  }
+  .button {
+    gap: 3rem;
+  }
+  .container {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #text {
+    font-size: 4rem;
+  }
+  .container {
+    padding: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #text {
+    font-size: 5rem;
+  }
+  .container {
+    padding: 6rem;
+    gap: 3rem;
+  }
+  .btn {
+    padding: 1.5rem 3rem;
+  }
+  .button {
+    gap: 4rem;
+  }
+}

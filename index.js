@@ -1,0 +1,28 @@
+function check() {
+  const inputNumber = document.getElementById("input").value;
+  var output1 = document.getElementById("output1");
+  var output2 = document.getElementById("output2");
+
+  let x = 2;
+  let y = inputNumber;
+
+  while (x <= y - 1) {
+    const rest = y % x;
+    if (rest === 0) {
+      output1.textContent = "Deine Zahl ist keine Primzahl";
+      output2.textContent = "";
+      return;
+    } else {
+      output2.textContent = "Deine Zahl ist eine Primzahl";
+      output1.textContent = "";
+    }
+    x++;
+  }
+}
+
+function reset() {
+  document.getElementById("output1").textContent = "";
+  document.getElementById("output2").textContent = "";
+  document.getElementById("input").value = "";
+  document.getElementById("input").focus();
+}
