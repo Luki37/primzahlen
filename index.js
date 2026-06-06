@@ -14,6 +14,7 @@ function check() {
     alert(
       "Es sind keine Zahlen über 99'999'999 erlaubt, da die Berechnung lange dauern würde",
     );
+    return;
   }
 
   while (x <= y - 1) {
