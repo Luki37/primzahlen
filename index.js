@@ -17,13 +17,13 @@ function check() {
     return;
   }
 
-  if (y < 2) {
+  if (y <= 2) {
     document.getElementById("output1").textContent = "";
     document.getElementById("output2").textContent = "";
     document.getElementById("input").value = "";
     document.getElementById("input").focus();
     alert(
-      "Es gibt keine negativen Primzahlen, 1 ist keine Primzahl und 2 ist eine Primzahl, aber dieses Tool ist nicht für soooo einfache fragen ausgelegt!",
+      "Es gibt keine negativen Primzahlen, 1 ist keine Primzahl und 2 ist eine Primzahl, aber dieses Tool ist nicht für soooo einfache Fragen ausgelegt!",
     );
     return;
   }
