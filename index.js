@@ -17,7 +17,7 @@ function check() {
     return;
   }
 
-  if (y <= 2) {
+  if (y < 3) {
     document.getElementById("output1").textContent = "";
     document.getElementById("output2").textContent = "";
     document.getElementById("input").value = "";
