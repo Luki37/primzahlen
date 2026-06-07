@@ -1,5 +1,5 @@
 function check() {
-  const inputNumber = document.getElementById("input").value;
+  const inputNumber = Number(document.getElementById("input").value);
   var output1 = document.getElementById("output1");
   var output2 = document.getElementById("output2");
 
