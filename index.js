@@ -1,7 +1,7 @@
 function check() {
   const inputNumber = Number(document.getElementById("input").value);
-  var output1 = document.getElementById("output1");
-  var output2 = document.getElementById("output2");
+  const output1 = document.getElementById("output1");
+  const output2 = document.getElementById("output2");
 
   let x = 2;
   let y = inputNumber;
